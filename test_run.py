@@ -1,45 +1,61 @@
 import random
-import time
-# 방금 만든 환경 클래스를 불러옵니다.
 from tic_tac_toe_env import TicTacToeEnv
+from minimax_agent import get_best_action
+
+def get_random_action(env):
+    """무작위 에이전트의 행동 선택"""
+    valid_actions = [i for i, value in enumerate(env.board) if value == 0]
+    return random.choice(valid_actions)
+
+def play_game(render=False):
+    """한 판의 게임을 진행하고 결과를 반환합니다."""
+    env = TicTacToeEnv()
+    env.reset()
+    
+    while not env.done:
+        # 1. 플레이어 1 (Minimax AI)의 턴
+        if env.current_player == 1:
+            action = get_best_action(env)
+        # 2. 플레이어 -1 (무작위 AI)의 턴
+        else:
+            action = get_random_action(env)
+            
+        _, reward, _, _ = env.step(action)
+        
+        if render:
+            env.render()
+            
+    # 게임 종료 후 승자 판정 (환경 코드의 check_winner 활용)
+    if env.check_winner(1):
+        return 1   # Minimax 승리
+    elif env.check_winner(-1):
+        return -1  # 무작위 AI 승리
+    else:
+        return 0   # 무승부
 
 def main():
-    # 1. 환경(우주) 생성 및 초기화 (S_0)
-    env = TicTacToeEnv()
-    state = env.reset()
+    print("=== 100판 시뮬레이션 시작 (Minimax vs Random) ===")
     
-    print("=== 틱택토 환경 시뮬레이션 시작 ===")
-    env.render()
-
-    step_count = 0
-    # 게임이 끝날 때(env.done == True)까지 턴을 반복합니다.
-    while not env.done:
-        # 2. 현재 상태에서 둘 수 있는 빈칸(Valid Actions) 찾기
-        # 보드(state) 배열에서 값이 0(빈칸)인 인덱스만 리스트로 뽑아냅니다.
-        valid_actions = [i for i, value in enumerate(env.board) if value == 0]
+    results = {'minimax_wins': 0, 'random_wins': 0, 'draws': 0}
+    num_games = 100
+    
+    for i in range(num_games):
+        # 마지막 판(100번째)만 어떻게 이기는지 과정을 화면에 출력
+        render = True if i == (num_games - 1) else False 
         
-        # 3. 무작위 행동 선택 (Random Policy)
-        action = random.choice(valid_actions)
+        winner = play_game(render=render)
         
-        player_symbol = 'O' if env.current_player == 1 else 'X'
-        print(f"턴 {step_count + 1}: 플레이어 {player_symbol}({env.current_player})가 위치 {action}에 돌을 둡니다.")
-        
-        # 4. 환경에 행동(A_t) 전달하여 상태를 변화(Step)
-        next_state, reward, done, info = env.step(action)
-        env.render()
-        
-        step_count += 1
-        time.sleep(0.5) # 눈으로 진행 상황을 쫓을 수 있도록 0.5초 대기
-
-    # 5. 게임 종료 후 결과 판정 (R_T)
-    print("=== 게임 종료 ===")
-    if reward == 1:
-        # step() 내부에서 턴이 넘어가버렸으므로, 승리자는 방금 돌을 둔 이전 플레이어입니다.
-        winner = -1 * env.current_player 
-        winner_symbol = 'O' if winner == 1 else 'X'
-        print(f"결과: 플레이어 {winner_symbol}({winner}) 승리!")
-    else:
-        print("결과: 무승부!")
+        if winner == 1:
+            results['minimax_wins'] += 1
+        elif winner == -1:
+            results['random_wins'] += 1
+        else:
+            results['draws'] += 1
+            
+    print("\n=== 최종 결과 ===")
+    print(f"Minimax AI 승리: {results['minimax_wins']}회")
+    print(f"무작위 AI 승리 : {results['random_wins']}회 (단 한 번이라도 이기면 알고리즘 실패!)")
+    print(f"무승부         : {results['draws']}회")
 
 if __name__ == "__main__":
     main()
