@@ -4,7 +4,7 @@
 >
 > **방향:** 기초 딥러닝부터 LLM × Game AI까지, 논문 구현 중심으로 구성
 
-[![wandb](https://img.shields.io/badge/Experiments-W%26B-yellow?logo=weightsandbiases)](https://wandb.ai/YOUR_USERNAME/portfolio-tsuruoka-lab)
+[![wandb](https://img.shields.io/badge/Experiments-W%26B-yellow?logo=weightsandbiases)](https://wandb.ai/swsw778-korea-universityE/portfolio-tsuruoka-lab)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red?logo=pytorch)](https://pytorch.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -69,13 +69,13 @@ portfolio-tsuruoka-lab/
 
 모든 구현 실험의 학습 로그, 하이퍼파라미터, 결과 시각화는 아래에서 확인할 수 있습니다.
 
-**[→ W&B 대시보드 보기](https://wandb.ai/YOUR_USERNAME/portfolio-tsuruoka-lab)**
+**[→ W&B 대시보드 보기](https://wandb.ai/swsw778-korea-university/portfolio-tsuruoka-lab)**
 
-| Phase | 실험명 | W&B 링크 |
-|---|---|---|
-| Phase 0 - 01 | NumPy Linear Algebra Basics | [링크](https://wandb.ai/YOUR_USERNAME/portfolio-tsuruoka-lab/runs/RUN_ID) |
-| Phase 0 - 02 | Micrograd Autograd Engine | 진행 예정 |
-| Phase 0 - 03 | MLP MNIST From Scratch | 진행 예정 |
+| Phase        | 실험명                      | W&B 링크                                                                                            |
+| ------------ | --------------------------- | --------------------------------------------------------------------------------------------------- |
+| Phase 0 - 01 | NumPy Linear Algebra Basics | [링크](https://wandb.ai/swsw778-korea-university/portfolio-tsuruoka-lab/workspace?nw=nwuserswsw778) |
+| Phase 0 - 02 | Micrograd Autograd Engine   | 진행 예정                                                                                           |
+| Phase 0 - 03 | MLP MNIST From Scratch      | 진행 예정                                                                                           |
 
 ---
 
@@ -83,16 +83,16 @@ portfolio-tsuruoka-lab/
 
 **[Tsuruoka Laboratory](https://www.logos.t.u-tokyo.ac.jp/)** — 도쿄대학 대학원 정보이공학계연구과
 
-> *"NLP · Reinforcement Learning · Artificial Intelligence for Games"*
+> _"NLP · Reinforcement Learning · Artificial Intelligence for Games"_
 > — Yoshimasa Tsuruoka
 
 ### 관련 논문 (구현 대상)
 
-| 논문 | 발표 | 구현 상태 |
-|---|---|---|
-| MJ-DLVAT: Deep Learning Value Assessment for Mahjong | CoG 2024 | ⬜ Phase 5 |
+| 논문                                                              | 발표       | 구현 상태  |
+| ----------------------------------------------------------------- | ---------- | ---------- |
+| MJ-DLVAT: Deep Learning Value Assessment for Mahjong              | CoG 2024   | ⬜ Phase 5 |
 | Improving Arithmetic Reasoning via Relation Tuples & Verification | arXiv 2024 | ⬜ Phase 5 |
-| Planning with Consistency Models for Offline RL | TMLR | ⬜ Phase 6 |
+| Planning with Consistency Models for Offline RL                   | TMLR       | ⬜ Phase 6 |
 
 ---
 
