@@ -70,11 +70,14 @@ $$\cos(\mathbf{a}, \mathbf{b}) = \frac{\mathbf{a} \cdot \mathbf{b}}{\|\mathbf{a}
 
 <!-- W&B 차트를 스크린샷으로 저장 후 아래 경로에 추가 -->
 
-![속도 비교](../assets/matmul_speed_comparison1.png)(../assets/matmul_speed_comparison2.png)(../assets/matmul_speed_comparison3.png)(../assets/matmul_speed_comparison4.png)
+![속도 비교 1](assets/matmul_speed_comparison1.png)
+![속도 비교 2](assets/matmul_speed_comparison2.png)
+![속도 비교 3](assets/matmul_speed_comparison3.png)
+![속도 비교 4](assets/matmul_speed_comparison4.png)
 
 ### 코사인 유사도 히트맵
 
-![코사인 유사도](../assets/cosine_similarity_heatmap.png)
+![코사인 유사도](assets/cosine_similarity_heatmap.png)
 
 ---
 
