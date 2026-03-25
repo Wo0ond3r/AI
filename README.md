@@ -115,4 +115,4 @@ pip install -r requirements.txt
 ## 📬 Contact
 
 - GitHub: [@Wo0ond3r](https://github.com/Wo0ond3r)
-- W&B: [swsw778-korea-university](https://wandb.ai/swsw778-korea-university)
+- W&B: [@swsw778-korea-university](https://wandb.ai/swsw778-korea-university)
