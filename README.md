@@ -4,7 +4,7 @@
 >
 > **방향:** 기초 딥러닝부터 LLM × Game AI까지, 논문 구현 중심으로 구성
 
-[![wandb](https://img.shields.io/badge/Experiments-W%26B-yellow?logo=weightsandbiases)](https://wandb.ai/swsw778-korea-universityE/portfolio-tsuruoka-lab)
+[![wandb](https://img.shields.io/badge/Experiments-W%26B-yellow?logo=weightsandbiases)](https://wandb.ai/swsw778-korea-university/portfolio-tsuruoka-lab)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red?logo=pytorch)](https://pytorch.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
