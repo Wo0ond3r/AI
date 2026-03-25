@@ -114,5 +114,5 @@ pip install -r requirements.txt
 
 ## 📬 Contact
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- W&B: [YOUR_USERNAME](https://wandb.ai/YOUR_USERNAME)
+- GitHub: [@Wo0ond3r](https://github.com/Wo0ond3r)
+- W&B: [swsw778-korea-university](https://wandb.ai/swsw778-korea-university)
