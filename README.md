@@ -116,4 +116,4 @@ pip install -r requirements.txt
 
 - GitHub: [@Wo0ond3r](https://github.com/Wo0ond3r)
 - W&B: [@swsw778-korea-university](https://wandb.ai/swsw778-korea-university)
-- E-Mail: [@swsw778](swsw778@gmail.com)
+- E-Mail: [swsw778@gmail.com](swsw778@gmail.com)
