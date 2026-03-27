@@ -2,7 +2,7 @@
 
 > **Phase 0 — 수학 & Python 기초** | 구현 과제 1 / 3
 
-[![wandb](https://img.shields.io/badge/W%26B-실험%20보기-yellow?logo=weightsandbiases)](https://wandb.ai/swsw778-korea-university/portfolio-tsuruoka-lab/workspace?nw=nwuserswsw778)
+[![wandb](https://img.shields.io/badge/W%26B-실험%20보기-yellow?logo=weightsandbiases)](https://wandb.ai/swsw778-korea-university/portfolio-tsuruoka-lab/runs/p6ok38yo)
 [![Colab](https://img.shields.io/badge/Colab-노트북%20열기-F9AB00?logo=googlecolab)](https://colab.research.google.com/github/Wo0ond3r/portfolio-tsuruoka-lab/blob/main/phase0-math-python/01-numpy-linear-algebra/01_numpy_linear_algebra_basics.ipynb)
 
 ---
@@ -34,7 +34,7 @@ $$C_{ij} = \sum_{k} A_{ik} \cdot B_{kj}$$
 | 32×32     | ~X ms    | ~Y ms   | ~Zx       |
 | 64×64     | ~X ms    | ~Y ms   | ~Zx       |
 
-> 📊 **정확한 수치는 [W&B 실험 보기](https://wandb.ai/swsw778-korea-university/portfolio-tsuruoka-lab/workspace?nw=nwuserswsw778)**
+> 📊 **정확한 수치는 [W&B 실험 보기](https://wandb.ai/swsw778-korea-university/portfolio-tsuruoka-lab/runs/p6ok38yo)**
 
 ### 3. 브로드캐스팅 — 4가지 핵심 케이스
 
